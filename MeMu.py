@@ -163,17 +163,13 @@ class MeMu:
             self.emu_running = False
 
 
-
-
-
-
     def close_app(self):
         self.app.destroy()
 
 
 
 
-
+    # TODO finish functions below
     def checkbox_event(self):
         print("checkbox toggled, current value:", self.check_var.get())
 
