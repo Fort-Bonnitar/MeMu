@@ -28,13 +28,13 @@ class MeMu:
         self.hovered_color = '#0b2f05'
 
 
-        # TODO add fonts
+        # fonts
         self.main_font_norm = ctk.CTkFont(family="G.B.BOOT", size=32)
         self.main_font_bold_large = ctk.CTkFont(family="G.B.BOOT", size=64, weight='bold')
         self.main_font_small = ctk.CTkFont(family="G.B.BOOT", size=16)
 
 
-        # TODO add background images
+        # background images
         self.bg_image = ctk.CTkImage(light_image=Image.open("Assets/Images/prebg.png"),
                                   dark_image=Image.open("Assets/Images/prebg.png"),
                                   size=(self.size_x, self.size_y))
@@ -44,29 +44,20 @@ class MeMu:
 
 
 
-        # TODO add variables
+        # variables
         self.rom_path = ctk.StringVar(self.app)
 
 
-        # # TODO add menu
+
+
+        # TODO finish main menu
+
+        # tabs for main menu
         self.tabs = ctk.CTkTabview(master=self.app, width=50, height=10, segmented_button_unselected_color=self.secondary_color, text_color=self.text_color, segmented_button_selected_color=self.selected_color, segmented_button_selected_hover_color=self.hovered_color, segmented_button_unselected_hover_color=self.hovered_color, bg_color=self.screen_color, border_color=self.screen_color, fg_color=self.screen_color)
         self.tabs.pack(padx=10, pady=105)
         self.tabs.add("Main Menu")
         self.tabs.add("In-Game")
         self.tabs.add("Cheats")
-
-
-
-   
-    
-
-
-
-
-
-
-
-
 
 
 
@@ -125,12 +116,13 @@ class MeMu:
 
 
 
+        # run 
         self.app.mainloop()
 
 
 
 
-    # TODO add functions
+    # TODO finish functions
 
     # Open a file dialog to choose a .gb file
     def load_rom(self):
@@ -173,7 +165,6 @@ class MeMu:
 
 
 
-    # def add_cheat(self):
 
 
     def close_app(self):
@@ -192,15 +183,15 @@ class MeMu:
 
  
 
-    # TODO add cheat menu
+    # TODO finish cheat menu
 
     # TODO add settings menu
 
-    # TODO add enable auto-save feature button.abs
+    # TODO add enable auto-save feature button
 
-    # TODO add possibly emulating the emu in tk
+    # TODO add emulating pyboy directly to the screen of the gameboy using tk 
 
+    # TODO consider using real buttons on the UI for emulator input
 
-
-
-memu = MeMu()
+if __name__ == '__main__':
+    memu = MeMu()
