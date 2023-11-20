@@ -1,13 +1,17 @@
 # MeMu
+
+
+
+
+
+![logo2](https://github.com/Fort-Bonnitar/MeMu/assets/100018719/a6ef2500-fa8e-4cbe-9d54-bf70190a6330)
+
+
+
+
+
  A GUI made for use with Pyboy emulator.
  Some features are still a WIP.
-
-
-
-
-
-
-![Uploading logo2.png…]()
 
 
 
